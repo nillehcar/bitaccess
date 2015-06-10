@@ -1,3 +1,11 @@
 body {
 	font-family: DIN, sans-serif;
 }
+
+.hide-text {
+	@include hide-text;
+}
+
+.upper {
+	text-transform: uppercase;
+}

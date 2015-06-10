@@ -12,7 +12,7 @@
   position: absolute;
   height: $height;
   width: $width;
-  background-color: $black;
+  background-color: $white;
   top: 30px;
 }
 
@@ -21,7 +21,7 @@
   position: absolute;
   height: $height;
   width: $width;
-  background-color: $black;
+  background-color: $white;
   content: "";
   top: $top;
   left: 0;
@@ -31,8 +31,16 @@
   transition-duration: 0.5s;
   position: absolute;
   width: $width;
-  background-color: $black;
+  background-color: $white;
   height: $height;
   content: "";
   top: $top;
+}
+
+@mixin hide-text {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+  position: absolute;
 }
