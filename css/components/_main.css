@@ -1,0 +1,35 @@
+@-moz-viewport {
+  width: device-width;
+  scale: 1; }
+
+@-ms-viewport {
+  width: device-width;
+  scale: 1; }
+
+@-o-viewport {
+  width: device-width;
+  scale: 1; }
+
+@-webkit-viewport {
+  width: device-width;
+  scale: 1; }
+
+@viewport {
+  width: device-width;
+  scale: 1; }
+
+/* line 7, /Users/rachellin/Desktop/BitAccess/website/bitaccess/scss/components/_main.scss */
+html {
+  box-sizing: border-box;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%; }
+
+/* line 16, /Users/rachellin/Desktop/BitAccess/website/bitaccess/scss/components/_main.scss */
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+/* line 20, /Users/rachellin/Desktop/BitAccess/website/bitaccess/scss/components/_main.scss */
+body {
+  margin: 0;
+  background-color: red; }

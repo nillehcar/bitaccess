@@ -1,0 +1,110 @@
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
+html {
+	box-sizing: border-box;
+	-moz-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+/* PUSH NAV */
+.push-nav {
+  position: relative; 
+  left: 0;
+  overflow-x: hidden;
+  display: block;
+}
+.main-nav {
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  right: -190px;
+  height: 100%;
+  width: 240px;
+}
+
+.menu-toggle {
+  float: left;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  height: 50px; 
+  width: 50px;
+  background-color: transparent;
+}
+
+.sticky-nav, .main-nav {
+  transition: all .3s;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+}
+.push-nav.toggled { 
+  left: -200px 
+}
+
+.main-nav.toggled {
+	right: 0 ;
+}
+
+.main-nav li {
+  width: 200px;
+  float: right;  
+}
+.main-nav li a { 
+  display: block; 
+  height: 40px;
+  line-height: 40px;
+  padding: 0 2em;
+}
+
+.hamburger{
+  @include btn(-10px, 0px);
+  
+  .icon {
+    @include icon(4px, 30px);
+    border-radius: 4px;
+    left: 15px;
+    
+    &:before{
+      @include icon-before(4px, 30px, -10px);
+      border-radius: 4px;
+    }
+    
+    &:after{
+      @include icon-after(4px, 30px, 10px);
+      border-radius: 4px;
+      left: 0;
+    }
+  }
+  
+  &.open {
+    .icon {
+      transition-duration: 0.5s;
+      background: transparent;
+      
+      &:before{
+        transform: rotateZ(45deg) scaleX(1.25) translate(6.5px, 6.5px);
+      }
+
+      &:after{
+        transform: rotateZ(-45deg) scaleX(1.25) translate(6px, -6px);
+      }
+    }
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}
