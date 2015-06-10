@@ -205,6 +205,49 @@ ul.static-menu,
 /* FOOTER */
 
 footer {
-	padding: 5rem;
+	padding-bottom: 6rem;
+	padding-top: 3rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
 	background-color: $black;
+}
+
+.footer-txt {
+	color: $white;
+	font-size: 13px;
+	line-height: 1em;
+	text-align: center;
+}
+
+.footer-txt a {
+	color: $white;
+	text-decoration: none;
+	&:hover {
+		color: $yellow;
+	}
+}
+
+.footer-symb {
+	width: 3rem;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@media only screen and (min-width: 35em) {
+
+	footer {
+	padding-bottom: 8rem;
+}
+
+	.footer-txt, {
+		text-align: right;
+		float: right;
+	}
+
+	.footer-symb {
+	display: block;
+	margin-left: auto;
+	margin-right: 0;
+	}
 }
