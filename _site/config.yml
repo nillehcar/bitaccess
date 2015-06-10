@@ -1,0 +1,4 @@
+markdown: redcarpet
+baseurl: /bitaccess
+permalink: pretty
+exclude: ['README.md','scss','prepros.cfg']
