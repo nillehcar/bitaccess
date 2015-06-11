@@ -1,0 +1,35 @@
+.grid {
+  overflow: hidden;
+  clear: both;
+  padding-top: 2rem;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.unit {
+  background-color: #fff;
+  float: left;
+}
+
+.gutter {
+  padding: .5rem;
+}
+
+.unit-s-1-2 {
+  width: 50%;
+}
+
+@media only screen and (min-width:42em) {
+  
+  .grid {
+    width: 60%;
+  }
+
+  .gutter {
+  padding: 1rem;
+  }
+
+  .unit-m-1-2 {
+    width: 50%;
+  }
+}

@@ -23,7 +23,7 @@ body {
 /* HAMBURGER */
 
 .hamburger{
-  @include btn(-20px, 10px);
+  @include btn(-20px, 15px);
   
   .icon {
     @include icon(4px, 30px);
@@ -135,25 +135,18 @@ ul.static-menu,
   }
 }
 
-.static-menu li:last-child .link, 
-.static-menu li:last-child .static-link { 
-	border-bottom: 0; 
-}
-
 .static-menu li i {
   position: absolute;
-  top: 16px;
-  left: 12px;
-  font-size: 14px;
+  top: 20px;
+  right: 17px;
+  font-size: 12px;
   -webkit-transition: all 0.4s ease;
   -o-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
 
-.static-menu li i {
-  right: 12px;
-  left: auto;
-  font-size: 18px;
+.static-menu li {
+  font-weight: 600;
 }
 
 .static-menu li.open i.fa-chevron-down {
@@ -187,14 +180,70 @@ ul.static-menu,
 }
 
 /* CONTENT */
+
 .logo {
 	position: absolute;
 	padding: 1.5rem;
-	width: 300px;
+	width: 200px;
 }
 
+@media only screen and(min-width: 35em){
+
+  .logo {
+    width: 300px;
+    padding-top: 1rem;
+  }
+}
+
+.content {
+  padding: 4rem;
+}
+
+.yellow {
+  background-color: $yellow;
+}
+
+.line {
+  display: block;
+  width: 45px;
+  height: 4px;
+  background: $black;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 1.5rem;
+}
+
+.text-wrapper {
+  margin: 5%;
+}
+
+@media only screen and (min-width: 35em){
+  .text-wrapper {
+    margin-left: 20%;
+    margin-right: 20%;
+
+  }
+}
+
+@media only screen and (min-width: 55em){
+  .text-wrapper {
+    margin-left: 25%;
+    margin-right: 25%;
+
+  }
+}
+
+/* IMAGES*/
+
 .img-bg {
-	width: 100%;
+  width: 100%;
+}
+
+.homepage {
+  background-image: url(../images/homepage.jpg);
+  background-size: cover;
+  background-position: 100% 0;
+  padding: 20rem 3rem;
 }
 
 /* FOOTER */
@@ -230,6 +279,7 @@ footer {
 }
 
 @media only screen and (min-width: 35em) {
+
 
 	footer {
 	padding-bottom: 8rem;

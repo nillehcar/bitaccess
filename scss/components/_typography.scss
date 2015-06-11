@@ -1,8 +1,3 @@
-@font-face {
-    font-family: 'DIN';
-    url:('../fonts/DIN.ttf');
-}
-
 body {
 	font-family: 'DIN', Helvetica, sans-serif;
 }
@@ -11,6 +6,26 @@ body {
 	@include hide-text;
 }
 
+.center {
+	text-align: center;
+}
+
 .upper {
 	text-transform: uppercase;
+}
+
+.pg-header {
+	color: $white;
+	text-align: center;
+	letter-spacing: 3px;
+	font-size: 30px;
+}
+
+.subhead {
+	font-size: 22px;
+	letter-spacing: 2px;
+}
+
+p {
+	line-height: 1.5rem;
 }
