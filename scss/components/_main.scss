@@ -230,7 +230,7 @@ ul.static-menu,
 }
 
 .content {
-  padding: 2rem;
+  padding: 3rem;
 }
 
 .yellow {
@@ -295,15 +295,14 @@ ul.static-menu,
 }
 
 .homepage {
-  background-image: url(../images/bg3-grad.jpg);
-  background-position: center;
+  background-image: url(../images/bg3.jpg);
+  background-size: cover;
   padding: 5rem 0;
 }
 
 @media only screen and (min-width: 35em) {
   .homepage {
-    background-position: 50% 90%;
-    padding: 13rem 0;
+    padding: 10rem 0;
   }
 }
 
