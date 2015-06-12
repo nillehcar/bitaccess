@@ -190,17 +190,55 @@ ul.static-menu,
 @media only screen and(min-width: 35em){
 
   .logo {
-    width: 300px;
+    width: 250px;
     padding-top: 1rem;
   }
 }
 
+.home-txt {
+  color: $white;
+  text-align: center;
+}
+
+.home-header {
+  color: $white;
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  margin: 0;
+}
+
+.home-btn {
+  text-align: center;
+  padding: 1rem;
+}
+
+@media only screen and(min-width: 60em) {
+  .home-header {
+    text-align: right;
+    font-size: 50px;
+  }
+
+  .home-txt {
+    text-align: left;
+  }
+
+  .home-btn {
+  text-align: left;
+}
+
+}
+
 .content {
-  padding: 4rem;
+  padding: 2rem;
 }
 
 .yellow {
   background-color: $yellow;
+}
+
+.grey {
+  background-color: $grey;
 }
 
 .line {
@@ -208,19 +246,20 @@ ul.static-menu,
   width: 45px;
   height: 4px;
   background: $black;
+  border-radius: 5px;
   margin: 0 auto;
   margin-top: 10px;
   margin-bottom: 1.5rem;
 }
 
 .text-wrapper {
-  margin: 5%;
+  margin: 2%;
 }
 
 @media only screen and (min-width: 35em){
   .text-wrapper {
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 15%;
+    margin-right: 15%;
 
   }
 }
@@ -233,6 +272,22 @@ ul.static-menu,
   }
 }
 
+.btn-wrapper {
+  padding: 1em;
+}
+
+.white-btn {
+  @include white-btn($white, $white, $white);
+}
+
+.black-btn {
+  @include black-btn($black, $black, $black);
+}
+
+.yellow-btn {
+  @include yellow-btn($yellow, $yellow, $yellow)
+}
+
 /* IMAGES*/
 
 .img-bg {
@@ -240,20 +295,27 @@ ul.static-menu,
 }
 
 .homepage {
-  background-image: url(../images/homepage.jpg);
-  background-size: cover;
-  background-position: 100% 0;
-  padding: 20rem 3rem;
+  background-image: url(../images/bg3-grad.jpg);
+  background-position: center;
+  padding: 5rem 0;
+}
+
+@media only screen and (min-width: 35em) {
+  .homepage {
+    background-position: 50% 90%;
+    padding: 13rem 0;
+  }
 }
 
 /* FOOTER */
 
 footer {
-	padding-bottom: 6rem;
+	padding-bottom: 5rem;
 	padding-top: 3rem;
 	padding-left: 2rem;
 	padding-right: 2rem;
-	background-color: $black;
+	background-color: $yellow;
+  margin-top: 3rem;
 }
 
 .footer-txt {
@@ -266,8 +328,9 @@ footer {
 .footer-txt a {
 	color: $white;
 	text-decoration: none;
+  @include ease(all, .4s, ease);
 	&:hover {
-		color: $yellow;
+		color: $black;
 	}
 }
 
@@ -283,6 +346,7 @@ footer {
 
 	footer {
 	padding-bottom: 8rem;
+  padding-top: 2rem;
 }
 
 	.footer-txt, {
