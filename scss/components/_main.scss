@@ -334,15 +334,69 @@ ul.static-menu,
   padding: 5rem 0;
 }
 
+.btm {
+  background-image: url(../images/bg4.jpg);
+  background-size: cover;
+  padding: 5rem 0;
+}
+
 @media only screen and (min-width: 35em) {
   .homepage{
     padding: 10rem 0;
   }
 
-    .company {
+    .company,
+    .btm {
     padding: 12rem 0;
   }
 
+}
+
+/* PRODUCT */
+
+.product-icon {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 15rem;
+}
+
+.pr-line {
+  display: block;
+  width: 45px;
+  height: 4px;
+  background: $black;
+  border-radius: 5px;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 1.5rem;
+}
+
+@media only screen and (min-width: 60em){
+  .pr-line {
+  margin-left: 0;
+}
+}
+
+.product-desc {
+  text-align: center;
+}
+
+@media only screen and(min-width: 60em) {
+  .product-icon {
+    margin-right: 0;
+  }
+
+  .product-desc {
+  text-align: left;
+  margin-left: 0;
+  width: 85%;
+}
+
+}
+
+.feat-desc {
+  margin: 0;
 }
 
 /* FOOTER */

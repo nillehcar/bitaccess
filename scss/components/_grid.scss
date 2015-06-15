@@ -13,13 +13,6 @@
   width: 100%;
 }
 
-.grid-img {
-  width: 700px;
-  height: auto;
-  background-image: url(../images/about-bw.jpg);
-  background-size: cover;
-}
-
 .unit {
   float: left;
 }
@@ -36,27 +29,29 @@
   width: 50%;
 }
 
-@media only screen and (min-width:45em) {
+
+@media only screen and (min-width: 55em) {
   
   .grid {
     width: 80%;
   }
 
-  .gutter {
-  padding: 1rem;
-  }
-
   .unit-m-1-2 {
     width: 50%;
   }
+
 }
 
-@media only screen and (min-width: 70em) {
+@media only screen and (min-width: 60em) {
 
   .unit-l-1-3 {
   width: 33%;
-
 }
+
+  .unit-l-2-3 {
+    width: 67%;
+  }
+
 }
 
 @media only screen and(min-width: 70em) {

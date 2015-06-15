@@ -74,18 +74,18 @@
 @mixin black-btn($bg-color, $hover-color, $text-color) {
   color: $black;
   padding: 1em 2em;
-  border-radius: 3px;
+  border-radius: 20px;
+  background-color: $yellow;
   font-size: 12px;
   letter-spacing: 1px;
-  border: 2px solid $black;
   font-weight: 600;
   display: inline-block;
   text-decoration: none;
   text-transform: uppercase;
-  transition: all .4s ease-in-out;
+  transition: all 250ms ease-in-out;
   &:hover {
-    color: $yellow;
-    border: 2px solid $yellow;
+    color: $black;
+    background-color: $blue;
   } 
 }
 
