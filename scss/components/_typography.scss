@@ -8,6 +8,7 @@ body {
 
 .center {
 	text-align: center;
+	overflow: hidden;
 }
 
 .upper {
@@ -18,7 +19,8 @@ body {
 	color: $white;
 	text-align: center;
 	letter-spacing: 3px;
-	font-size: 30px;
+	font-size: 32px;
+	font-weight: 500;
 }
 
 .subhead {

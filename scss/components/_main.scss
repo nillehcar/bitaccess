@@ -235,12 +235,24 @@ ul.static-menu,
   padding: 3rem;
 }
 
+.vid-content {
+  padding: 3rem 0;
+}
+
 .yellow {
   background-color: $yellow;
 }
 
 .grey {
   background-color: $grey;
+}
+
+.blue {
+  background-color: $blue;
+}
+
+.black {
+  background-color: $black;
 }
 
 .line {
@@ -290,6 +302,20 @@ ul.static-menu,
   @include yellow-btn($yellow, $yellow, $yellow)
 }
 
+.video {
+  padding: 3rem 0;
+  width: 90%;
+  height: 35%;
+  overflow: hidden;
+}
+
+@media only screen and (min-width: 35em) {
+  .video {
+    width: 50%;
+    height: 55%;
+  }
+}
+
 /* IMAGES*/
 
 .img-bg {
@@ -297,15 +323,26 @@ ul.static-menu,
 }
 
 .homepage {
+  background-image: url(../images/homepage2.jpg);
+  background-size: cover;
+  padding: 5rem 0;
+}
+
+.company {
   background-image: url(../images/bg3.jpg);
   background-size: cover;
   padding: 5rem 0;
 }
 
 @media only screen and (min-width: 35em) {
-  .homepage {
+  .homepage{
     padding: 10rem 0;
   }
+
+    .company {
+    padding: 12rem 0;
+  }
+
 }
 
 /* FOOTER */
@@ -315,35 +352,44 @@ footer {
 	padding-top: 3rem;
 	padding-left: 2rem;
 	padding-right: 2rem;
-	background-color: $yellow;
-  margin-top: 3rem;
+  background-color: #252526;
+}
+
+.foot-left,
+.footer-txt,
+.footer-txt a {
+  color: $grey;
+}
+
+
+.foot-left {
+  font-size: 13px;
+  text-align: center;
 }
 
 .footer-txt {
-	color: $white;
 	font-size: 13px;
 	line-height: 1em;
 	text-align: center;
 }
 
 .footer-txt a {
-	color: $white;
 	text-decoration: none;
   @include ease(all, .4s, ease);
 	&:hover {
-		color: $black;
+		color: $yellow;
 	}
 }
 
 .footer-symb {
-	width: 3rem;
+	width: 2rem;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+  padding-top: 1rem;
 }
 
 @media only screen and (min-width: 35em) {
-
 
 	footer {
 	padding-bottom: 8rem;
@@ -353,11 +399,19 @@ footer {
 	.footer-txt, {
 		text-align: right;
 		float: right;
+    padding-right: 3%;
 	}
 
 	.footer-symb {
 	display: block;
 	margin-left: auto;
-	margin-right: 0;
+	margin-right: 3%;
 	}
+
+  .foot-left {
+    text-align: left;
+    float: left;
+    padding-left: 3%;
+    padding-top: 3%;
+  }
 }
