@@ -345,13 +345,20 @@ ul.static-menu,
   padding: 5rem 0;
 }
 
+.cloud {
+  background-image: url(../images/bg10.jpg);
+  background-size: cover;
+  padding: 5rem 0;
+}
+
 @media only screen and (min-width: 35em) {
   .homepage{
     padding: 10rem 0;
   }
 
     .company,
-    .btm {
+    .btm,
+    .cloud {
     padding: 12rem 0;
   }
 
