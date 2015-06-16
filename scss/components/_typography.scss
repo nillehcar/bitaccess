@@ -38,6 +38,18 @@ body {
 	line-height: 1.5rem;
 }
 
+table {
+	width: 100%;
+}
+
+.spec {
+	text-align: right;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: 600;
+	padding-right: 5px;
+}
+
 h3, h4 {
 	margin: 0;
 }

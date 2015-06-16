@@ -318,6 +318,11 @@ ul.static-menu,
 
 /* IMAGES*/
 
+.img-flex {
+  display: block;
+  width: 100%;
+}
+
 .img-bg {
   width: 100%;
 }
@@ -423,7 +428,7 @@ ul.static-menu,
   .feature-unit {
     float: left;
     padding-top: 0;
-    margin-top: 1em;
+    margin-top: 1.5em;
   }
 
   .feature-txt {
@@ -437,6 +442,29 @@ ul.static-menu,
     text-align: left;
     margin-left: 17%;
   }
+}
+
+.grid-img {
+  width:100%;
+  height: auto;
+  overflow: hidden;
+  z-index: -100;
+}
+
+.spec-info {
+  position: relative;
+  right: 20%;
+}
+
+@media only screen and(min-width: 60em){
+  .spec-wrapper{
+   height: 370px;
+ }
+
+ .grid-img {
+  height: 370px;
+  width: auto;
+}
 }
 
 /* FOOTER */

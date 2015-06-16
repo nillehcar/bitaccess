@@ -47,12 +47,6 @@
 
 }
 
-@media only screen and(min-width: 70em) {
-    .unit-l-2-3 {
-    width: 67%;
-  }
-}
-
 @media only screen and (min-width: 120em) {
   .grid {
     width: 70%;
@@ -76,7 +70,7 @@
 @media only screen and (min-width:50em) {
   
   .home-grid {
-    width: 80%;
+    width: 70%;
   }
 }
 
@@ -104,3 +98,11 @@
   }
 }
 
+/* IMAGE GRID */
+
+.img-grid {
+  overflow: hidden;
+  clear: both;
+  margin: 0 auto;
+  width: 100%;
+}
