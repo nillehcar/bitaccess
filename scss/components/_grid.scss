@@ -1,16 +1,9 @@
 .grid {
   overflow: hidden;
   clear: both;
-  padding:2rem 0;
+  padding: 1rem 0;
   margin: 0 auto;
   width: 90%;
-}
-
-.img-grid {
-  overflow: hidden;
-  clear: both;
-  margin: 0 auto;
-  width: 100%;
 }
 
 .unit {
@@ -93,3 +86,21 @@
     width: 60%;
   }
 }
+
+/* FEATURE GRID */
+
+.feat-grid {
+  overflow: hidden;
+  clear: both;
+  padding-bottom: 3rem;
+  margin: 0 auto;
+  width: 90%;
+}
+
+@media only screen and (min-width: 55em) {
+  
+  .feat-grid {
+    width: 70%;
+  }
+}
+
