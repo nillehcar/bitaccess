@@ -351,6 +351,13 @@ ul.static-menu,
   padding: 5rem 0;
 }
 
+.api {
+  background-image: url(../images/bg12.jpg);
+  background-size: cover;
+  padding: 5rem 0;
+}
+
+
 @media only screen and (min-width: 35em) {
   .homepage{
     padding: 10rem 0;
@@ -358,7 +365,8 @@ ul.static-menu,
 
     .company,
     .btm,
-    .cloud {
+    .cloud,
+    .api {
     padding: 12rem 0;
   }
 
