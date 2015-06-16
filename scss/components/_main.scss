@@ -397,6 +397,7 @@ ul.static-menu,
   text-align: left;
   margin-left: 0;
   width: 85%;
+  padding-top: 2em;
 }
 
 }
@@ -453,7 +454,7 @@ ul.static-menu,
 
 .spec-info {
   position: relative;
-  right: 20%;
+  right: 25%;
 }
 
 @media only screen and(min-width: 60em){
@@ -465,6 +466,12 @@ ul.static-menu,
   height: 370px;
   width: auto;
 }
+
+  .spec-info {
+    right: 27%;
+    top: 1em;
+}
+
 }
 
 /* FOOTER */
