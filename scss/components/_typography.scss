@@ -19,9 +19,14 @@ body {
 	color: $white;
 	text-align: center;
 	letter-spacing: 3px;
-	font-size: 40px;
-	font-weight: 500;
+	font-size: 30px;
+	font-weight: 600;
 	text-transform: uppercase;
+}
+@media only screen and(min-width: 50em){
+.pg-header {
+	font-size: 40px;
+}
 }
 
 .feature {
@@ -40,6 +45,10 @@ body {
 
 table {
 	width: 100%;
+}
+
+td {
+	line-height: 1.5em;
 }
 
 .spec {
